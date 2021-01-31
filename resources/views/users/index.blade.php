@@ -6,9 +6,11 @@
             <thead>
                 <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Imię</th>
+                <th scope="col">Nazwisko</th>
+                <th scope="col">Numer telefonu</th>
+                <th scope="col">Akcje</th>
                 </tr>
             </thead>
             <tbody>
@@ -17,6 +19,8 @@
                         <th scope="row">{{$user->id}}</th>
                         <td>{{$user->email}}</td>
                         <td>{{$user->name}}</td>
+                        <td>{{$user->surname}}</td>
+                        <td>{{$user->phone_number}}</td>
                         <td></td>
                     </tr>
                 @endforeach
